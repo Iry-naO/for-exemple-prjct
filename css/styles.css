@@ -21,3 +21,56 @@
 .club-list .link:active {
   color: #ff1744;
 }
+
+/* 1 */
+/* MOBILE FIRST */
+
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  max-width: 1170px;
+  min-width: 320px;
+  maring: 0 auto;
+}
+
+/* MEDIA */
+
+@media (min-width: 768px) {
+  .container {
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+
+  .element {
+    flex-basis: calc((100% - 10px) / 2);
+  }
+}
+
+/* 2 */
+/* MOBILE FIRST */
+.container {
+  max-width: 1170px;
+  min-width: 320px;
+  maring: 0 auto;
+}
+
+.element:not(:last-child) {
+  margin-bottom: 5px;
+}
+
+/* MEDIA */
+
+@media (min-width: 768px) {
+  .container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+
+  .element {
+    flex-basis: calc((100% - 10px) / 2);
+    margin: 0;
+  }
+}

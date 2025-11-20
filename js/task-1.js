@@ -1,0 +1,25 @@
+// ЗАДАЧА №1
+// Створи змінну age і присвой їй будь-яке число.
+// Виведи в консоль:
+// "Adult", якщо age >= 18
+// "Child", якщо age <= 18
+
+//1 варіант
+let age = 20;
+let isAdult = age >= 18;
+
+console.log(isAdult);
+
+// 2 варіант
+// let age = 20;
+// if (age >= 18) {
+//   console.log("Adult");
+// } else {
+//   console.log("Child");
+// }
+
+// 3 варіант (тернарний оператор)
+// let age = 20;
+// let message = age >= 18 ? "Adult" : "Child";
+
+// console.log(message);
