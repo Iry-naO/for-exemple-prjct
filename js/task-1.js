@@ -4,7 +4,7 @@
 // "Adult", якщо age >= 18
 // "Child", якщо age <= 18
 
-//1 варіант
+// 1 варіант
 let age = 20;
 let isAdult = age >= 18;
 
