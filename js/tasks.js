@@ -108,3 +108,71 @@
 // console.log(validateEmail("adf"));
 // console.log(validateEmail("my@mail"));
 // __________________________________________________________
+
+// 7---------------------------------------------------------
+// function test() {
+//   let arr = [];
+//   arr.push(5);
+//   arr.push(10);
+//   return arr;
+// }
+// console.log(test());
+// __________________________________________________________
+
+//8 ---------------------------------------------------------
+// const products = [
+//   "Apple iPhone 15",
+//   "Sumsung Galaxy S24",
+//   "Apple Watch",
+//   "Xiaomi Redmi Note",
+//   "Apple AirPods",
+// ];
+// let keyword;
+// function findByKeyword(products, keyword) {
+//   let keyArray = [];
+//   const lowerKeyword = keyword.toLowerCase();
+//   for (let i = 0; i < products.length; i++) {
+//     const product = products[i].toLowerCase();
+//     if (product.includes(lowerKeyword)) {
+//       keyArray.push(products[i]);
+//     }
+//   }
+//   return keyArray;
+// }
+// console.log(findByKeyword(products, "Apple"));
+// ____________________________________________________________
+
+// 9-----------------------------------------------------------
+function getPositiveStats(numbers) {
+  let statsArray = [];
+
+  for (let i = 0; i < numbers.length; i++) {
+    if (numbers[i] > 0) {
+      statsArray.push(numbers[i]);
+    }
+  }
+
+  let sum = 0;
+  for (let i = 0; i < statsArray.length; i++) {
+    sum += statsArray[i];
+  }
+
+  let avg = sum / statsArray.length;
+
+  let min = statsArray[0];
+  for (let i = 1; i < statsArray.length; i++) {
+    if (statsArray[i] < min) {
+      min = statsArray[i];
+    }
+  }
+
+  let max = statsArray[0];
+  for (let i = 1; i < statsArray.length; i++) {
+    if (statsArray[i] > max) {
+      max = statsArray[i];
+    }
+  }
+  return [sum, avg, min, max];
+}
+
+console.log(getPositiveStats([16, -4, 8, 45, -9]));
